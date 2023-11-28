@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="shop&check.css" type="text/css" />
+</head>
+
+<body>
+
+     <!--Navigation-->
+    <div id="HambSideNav" class="HambSideNav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="Shop Now.html">Home </a>
+        <a href="About.html">About the Leather </a>
+        <a href="DIY Methods.html">DIY Methods </a>
+        <a href="Brick & Mortar.html">Brick &amp; Mortar </a>
+        <a href="Shop Now.html">Shop Now</a>
+    </div>
+    
+    <!--Social Media-->
+    <div class="Icon_Bar_SocialM">
+        <a href="https://www.instagram.com"><img src="./Images/Instagram.png" width="30" height="30"></a>
+        <a href="https://www.twitter.com"><img src="./Images/Twitter.png" width="30" height="30"></a>
+        <a href="https://www.facebook.com/"><img src="./Images/facebook.png" width="30" height="30"></a>
+
+        <!--Rhino Logo-->
+        <div class="Icon_Bar_SocialM_logo">
+            Inkwali <img src="./Images/Rhino.2.jpg" width="85"> Yenkosi
+        </div>
+
+        <span style="font-size:45px;cursor:pointer; float: right;" onclick="openNav()">&#9776; </span>
+    </div>
+
+    <article><br />
+        <!--Heading-->
+        <h1>Just one more step...</h1>
+        <p>
+            Before you're new Leather Jackets can leave we need you to fill in the following form
+        </p>
+    </article><br />
+
+    <!--Required form with fills inserted-->
+    <div class="Checkout form ">
+        <form method="post" action="Thank you.html">
+            <fieldset>
+
+                <!--Customer Info-->
+                <legend style="color:black"><span class="number">1</span>Customer Info</legend>
+                <input type="text" name="field1" placeholder="Your Full Name *" required>
+                <input type="email" name="field2" placeholder="Your Email *" required>
+                <input type="number" name="field2" placeholder="Your Phone Number *" required>
+            </fieldset>
+
+            <fieldset>
+                <!--Shopping Details-->
+                <legend style="color:black"><span class="number">2</span>Shipping Details</legend>
+                <input type="text" name="Adress" placeholder="Your Street Number and Name *" required>
+                <input type="text" name="Adress" placeholder="Your City *" required>
+                <input type="text" name="Adress" placeholder="Your Suburb *" required>
+
+                <!--Provinces to choose from-->
+                <label for="province" style="color:black">Province:</label>
+                <select id="job" name="field4">
+                    <option value="Gauteng">Gauteng</option>
+                    <option value="West Cape">Western Cape</option>
+                    <option value="East Cape">Eastern Cape</option>
+                    <option value="Free State">Free State</option>
+                    <option value="Kwa-Zulu Natal">KwaZulu-Natal</option>
+                    <option value="Mpumalanga">Mpumalanga</option>
+                    <option value="Limpopo">Limpopo</option>
+                    <option value="North-West">North-West</option>
+                    <option value="North Cape">Northern Cape</option>
+
+                </select>
+                <!--Zip Code-->
+                <input type="text" name="Adress" placeholder="Your ZIP Code *" required>
+                <!--Special Instructions for Company-->
+                <textarea cols="5" rows="5" placeholder="Special Instructions"></textarea>
+
+            </fieldset>
+
+            <fieldset>
+                <!--Billing Details for Company-->
+                <legend style="color:black"><span class="number">3</span>Billing Details </legend>
+                <input type="text" name="field1" placeholder="Name On Card *" required>
+                <input type="text" name="field2" placeholder="Credit Card Number *" required>
+                <input type="text" name="field2" placeholder="Expire date  *" required>
+                <input type="text" name="field2" placeholder="CVV *" required>
+            </fieldset>
+
+            <!--Ts & Cs-->
+            <p style="color:black"> Do you agree to our <u>Terms & Conditions</u>
+                <br />
+                <td>Yes<input type="checkbox" name="Yes" value="Yes" required /></td>
+                <td>No<input type="checkbox" name="No" value="No" /></td>
+                <br />
+                <br />
+                <br />
+                <input type="submit" value="Ship Off!" />
+        </form>
+    </div>
+</body>
+ <!--Footer with News Letter-->
+<footer class="Footer">
+    <img class="Footor2" src="./Images/LOgo.jpg" alt="LOGO" />
+
+     <!--Copyright info-->
+    <p style="text-align:center">
+        This website was designed by <i> Sjanrie S Hendrikz 12375 </i> and ALL copyrights are reserved</p>
+        <hr style="color:white;width:50px;" />
+        <!--Links to website pages-->
+    <ul>
+        <li> <a href="DIY Methods.html">DIY </a></li>
+        <li><a href="About.html">About </a></li>
+        <li><a href="Shop Now.html">Home </a></li>
+        <li><a href="Brick & Mortar.html">Brick &amp; Mortar </a></li>
+        <li><a href="Shop Now.html">Shop Now</a></li>
+    </ul>
+
+     <!--News Letter-->
+    <span class="News_Letter">
+        Join Our Newsletter team! <input type="email" placeholder="example@gmail.com" !required />
+        <button id="Join" class="Join">Join</button>
+    </span>
+    <!--Message-->
+    <div id="NL_Message" class="Message">
+        <div class="Message-Content">
+            <span class="close">&times;</span>
+            <p>Thank you for joining our news letter!<br /><br /></p>
+        </div>
+    </div>
+    </p>
+
+</footer>
+
+<script>
+
+    function join() {
+        document.getElementById("joinoverlay").style.display = "block";
+    }
+
+    function joinclear() {
+        document.getElementById("joinoverlay").style.display = "none";
+    }
+
+    // Open the HambSideNav menu
+    function openNav() {
+        document.getElementById("HambSideNav").style.width = "250px";
+    }
+    // Close the HambSideNav menu
+    function closeNav() {
+        document.getElementById("HambSideNav").style.width = "0";
+    }
+    // Get the News Letter
+    var Message = document.getElementById('NL_Message');
+
+    // Get button that opens the News Letter
+    var btn = document.getElementById("Join");
+
+    // Get span element that Closes the News Letter 
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks on the button, the News Letter opens
+    btn.onclick = function () {
+        Message.style.display = "block";
+    }
+
+    // When the user clicks on X, the News Letter closes
+    span.onclick = function () {
+        Message.style.display = "none";
+    }
+</script>
+
+</html>
