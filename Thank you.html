@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Thank You</title>
+    <link rel="stylesheet" href="thanks.css">
+</head>
+
+<body>
+
+     <!--Navigation-->
+    <div id="HambSideNav" class="HambSideNav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="Shop Now.html">Home </a>
+        <a href="About.html">About the Leather </a>
+        <a href="DIY Methods.html">DIY Methods </a>
+        <a href="Brick & Mortar.html">Brick &amp; Mortar </a>
+        <a href="Shop Now.html">Shop Now</a>
+    </div>
+    
+    <!--Social Media-->
+    <div class="Icon_Bar_SocialM">
+        <a href="https://www.instagram.com"><img src="./Images/Instagram.png" width="30" height="30"></a>
+        <a href="https://www.twitter.com"><img src="./Images/Twitter.png" width="30" height="30"></a>
+        <a href="https://www.facebook.com/"><img src="./Images/facebook.png" width="30" height="30"></a>
+
+        <!--Rhino Logo-->
+        <div class="Icon_Bar_SocialM_logo">
+            Inkwali <img src="./Images/Rhino.2.jpg" width="85"> Yenkosi
+        </div>
+
+        <span style="font-size:45px;cursor:pointer; float: right;" onclick="openNav()">&#9776; </span>
+    </div>
+    
+    <!--Background Image-->
+    <img src="./Images/Thanks.jpg" alt="Thank You" id="thank" style="width:100%;height: 1030px;">
+
+    <!--footer_2-->
+    <footer class="footer_2">
+        <img src="./Images/LOgo.jpg" alt="LOGO" align="right" style="width:150px;">
+
+        <!--Copyright-->
+        <p style="text-align:center">
+            This website was designed by <i> Sjanrie S Hendrikz 12375 </i> and ALL copyrights are reserved</p>
+            <hr style="color:white;width:50px;" />
+
+        <!--Links to website pages-->
+        <ul>
+            <li><a href="DIY Methods.html">DIY </a></li>
+            <li><a href="About.html">About </a></li>
+            <li><a href="Shop Now.html">Home </a></li>
+            <li><a href="Brick & Mortar.html">Brick &amp; Mortar </a></li>
+            <li><a href="Shop Now.html">Shop Now</a></li>
+        </ul>
+
+        <!--News Letter-->
+        <span class="News_Letter">
+            Join Our Newsletter team! <input type="email" placeholder="example@gmail.com" required />
+            <button id="Join" class="Join">Join</button>
+        </span>
+
+        <!--Message-->
+        <div id="NL_Message" class="Message">
+            <div class="Message-Content">
+                <span class="close">&times;</span>
+                <p>Thank you for joining our news letter!<br /><br /></p>
+            </div>
+        </div>
+        </p>
+
+    </footer>
+
+
+    <script>
+        function join() {
+            document.getElementById("joinoverlay").style.display = "block";
+        }
+
+        function joinclear() {
+            document.getElementById("joinoverlay").style.display = "none";
+        }
+
+        // Open the HambSideNav menu
+        function openNav() {
+            document.getElementById("HambSideNav").style.width = "250px";
+        }
+
+        // Close the HambSideNav menu
+        function closeNav() {
+            document.getElementById("HambSideNav").style.width = "0";
+        }
+
+        // Get the News Letter
+        var Message = document.getElementById('NL_Message');
+
+         // Get button that opens the News Letter
+        var btn = document.getElementById("Join");
+
+        // Get span element that Closes the News Letter
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks on the button, the News Letter opens
+        btn.onclick = function () {
+            Message.style.display = "block";
+        }
+
+        // When the user clicks on X, the News Letter closes
+        span.onclick = function () {
+            Message.style.display = "none";
+        }
+    </script>
+</body>
+
+</html>
